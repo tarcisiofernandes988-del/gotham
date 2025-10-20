@@ -1,0 +1,283 @@
+/* ======== Estilos Gerais ======== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #555;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======== Cabeçalho ======== */
+
+
+/* ----- CABEÇALHO ----- */
+header {
+    background-color: #1c1c1c; 
+    color: yellow;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Arial Black", sans-serif;
+  }
+  
+  .header-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    color: #ffcc00; /* muda pra amarelo ao passar o mouse */
+  }
+
+  /* SEÇÃO DE NOTÍCIAS / EMPREGOS / SEGURANÇA */
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+  
+  .categoria {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .categoria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .categoria h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .categoria p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+
+/* ======== Cultura ======== */
+.cultura {
+    background-color: yellow;
+    padding: 40px 20px;
+    border-radius: 8px;
+    color: black;
+  }
+  
+.cultura {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.cultura .texto {
+    flex: 1;
+    min-width: 280px;
+}
+
+.cultura h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cultura p {
+    color: #555;
+}
+
+.cultura .imagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ======== Projetos ======== */
+.projetos {
+    background-color: grey;
+    padding: 40px 20px;
+    border-radius: 8px;
+    color: black;
+  }
+  
+.projetos {
+    margin-bottom: 60px;
+}
+
+.projetos h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* ======== Rodapé ======== */
+footer {
+    background-color: black;
+    padding: 40px 20px 20px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.coluna h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.coluna ul {
+    list-style: none;
+}
+
+.coluna ul li {
+    margin-bottom: 6px;
+}
+
+.coluna ul a {
+    text-decoration: none;
+    color: #555;
+}
+
+.coluna ul a:hover {
+    color: #0073e6;
+}
+
+.direitos {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Alinhamento da logo e do título lado a lado */
+.titulo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 12px; /* espaço entre logo e texto */
+  }
+  
+  .logo-prefeitura {
+    width: 55px;      
+    height: 55px;
+    object-fit: contain;
+  }
+  
+  .titulo-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff00; 
+    margin: 0;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #f1f1f1;
+    width: 280px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* deixa o h2 da seção de conteúdo em amarelo */
+.conteudo h2 {
+  color: #f2d200; 
+}
