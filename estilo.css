@@ -281,3 +281,64 @@ footer {
 .conteudo h2 {
   color: #f2d200; 
 }
+
+/* Contatos */
+h1{
+  color: #f2d200;
+}
+
+#contatinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nome {
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#email {
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#telefone {
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#assunto {
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#data {
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#mensagem {
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+label {
+  color: yellow;
+  font-size: 25px;
+}
+
+/* Responsividade */
+@media screen and (max-width:426px){
+  .destaques{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width:769px){
+  .destaques{
+    display: flex;
+    flex-direction: row;
+  }
+}

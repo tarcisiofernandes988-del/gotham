@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="titulo-header">
+                <img src="imagens/dc-comics-batman-logo__26106.jpg" alt="Logo Gotham City" class="logo-prefeitura">
+                <h1>PREFEITURA DE GOTHAM CITY</h1>
+              </div>             
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="./seguranca.html">Segurança</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="./servicos.html">Serviços</a></li>
+          </ul>
+        </nav>
+      </header>
+        <section>
+            
+        <h1>Formulário de contatos</h1>
+            <div id="contatinho">
+
+    <form action="ondevaiserenviado.php" method="GET" >
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome">
+       <br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+       <br>
+
+          <label for="telefone">Telefone:
+                 <input type="number" name="telefone" id="telefone">
+          </label>
+          <br>
+
+          <label for="assunto"> Assunto:
+              <input type="text" name="assunto" id="assunto">
+          </label>
+          <br>
+
+          <label for="data">Data:</label>
+          <input type="date" name="data" id="data">
+          <br>
+          
+          <label for="mensagem">Mensagem/Descrição:</label> <br>
+          <textarea id="mensagem" name="mensagem" rows="10" cols="50"></textarea>
+          <br>
+
+      <button type="button">Enviar</button>
+                </div>
+  </form>
+
+  <footer>
+    <div class="container rodape">
+        <div class="coluna">
+            <h4>Utilidades</h4>
+            <ul>
+                <li><a href="#">Portal da Transparência</a></li>
+                <li><a href="#">Diário Oficial</a></li>
+                <li><a href="#">Serviços ao Cidadão</a></li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <h4>Endereço</h4>
+            <p>Praça Central, nº 1<br>Centro, Gotham City</p>
+        </div>
+        <div class="coluna">
+            <h4>Contato</h4>
+            <p> WhatsApp: (11) 90000-0000<br> contato@gothamcity.gov.br</p>
+        </div>
+    </div>
+    <p class="direitos">© 2025 Prefeitura de Gotham City — Todos os direitos reservados.</p>
+</footer>
+  <!-- 
+        Form -> Elemento html responsável por agrupar campos para enviar dados para uma linguagem de programação que irá processar.
+        Form tem dois atributos quase sempre utilizados o action que vai o endereço do arquivo que irá receber os dados e o method que pode receber POST ou GET.
+             GET -> É utilizado quando queremos buscar algo
+                -> Dados passados na URL/No endereço
+                -> ondevaiserenviado.php?nome=Thiago&sobrenome=Miranda
+                -> & separa cada campo que será enviado
+             POST -> É utilizado quando queremos gravar algo 
+               -> Envia os dados de maneira transparente (não mostra)
+               -> Usa a requisição HTTP
+    -->
+    <!-- 
+          label -> Rótulo de um campo, utiliza o atributo for para ligar este rótulo ao id de um campo. 
+          input -> Campo de formulário
+              type -> Tipo do campo
+              name -> nome da variável que irá passar os dados
+              id -> Identificador único do elemento         
+      -->
+      <!--
+                  min -> determina o valor mínimo
+                  max -> determina o valor máximo
+                  value -> valor padrão a ser mostrado ao iniciar o formulário (Pode ser alterado na utilização)
+                 -->
+       <!--
+                  step -> define o valor que será alterado nos campos númericos, o padrão é de 1 em 1, mas pode ser utilizado  números maiores, por exemplo de 2 em 2 ou números decimais por exemplo de 0.01 em 0.01
+              -->   
+  <!--
+              Types mais comuns:
+              text -> Para textos
+              number -> para números
+              date -> Para Datas
+              password -> para senhas
+              email -> Para emails (No celular o teclado muda mostrando o @)
+              tel -> Para telefones (No celularTeclado mostra apenas números)
+          -->
+         
+         
+              <!-- 
+                  Campos do tipo radio são campos que ao ter o mesmo nome permitem que apenas uma opção seja selecionada.
+              -->
+         
+          
+              <!-- checkbox -> campo que ao ter o mesmo nome ele permite que o uma mesma pergunta tenha multiplas respostas, permite que o mesmo campo possa ser marcado ou desmarcado
+              atributo checked é utilizado em campos do tipo radio e checkbox para marcar um campo previamente
+              -->
+          
+              <!-- Campo select é um menu que aparece muliplas opções e apenas uma pode ser selecionada. Cada select é formado por multiplas options e cada option tem um valor (value) diferente -->
+              <!-- Textarea é um campo para multiplas linhas de texto
+              atributos rows determina a quantidade de linhas e cols a quantidade de colunas.
+          -->                            
+      </section>
+</body>
+</html>
